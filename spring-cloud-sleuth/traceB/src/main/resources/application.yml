@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: trace-b
+
+server:
+  port: 3333
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+

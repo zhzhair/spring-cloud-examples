@@ -1,0 +1,1216 @@
+2018-12-14 08:39:43,238  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$513e824a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 08:39:43,597  INFO - [main                 ] com.example.tracea.TraceaApplicationTests          : No active profile set, falling back to default profiles: default
+2018-12-14 08:39:43,878 ERROR - [main                 ] org.springframework.boot.SpringApplication         : Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:181)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1023)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:195)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:159)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanType(BeanTypeRegistry.java:152)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:140)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:135)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.getNamesForType(BeanTypeRegistry.java:97)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:298)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:289)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:278)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:189)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:160)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 43 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 69 common frames omitted
+2018-12-14 08:39:43,878  WARN - [main                 ] org.springframework.boot.SpringApplication         : Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:507)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:477)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:590)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:905)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:891)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:877)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:826)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 52 common frames omitted
+2018-12-14 08:39:43,878 ERROR - [main                 ] o.springframework.test.context.TestContextManager  : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@13b13b5d] to prepare test instance [com.example.tracea.TraceaApplicationTests@757194dc]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:181)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1023)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:195)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:159)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanType(BeanTypeRegistry.java:152)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:140)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:135)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.getNamesForType(BeanTypeRegistry.java:97)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:298)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:289)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:278)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:189)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:160)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 43 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 69 common frames omitted
+2018-12-14 08:40:45,608  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$52c29b51] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 08:40:45,967  INFO - [main                 ] com.example.tracea.TraceaApplicationTests          : No active profile set, falling back to default profiles: default
+2018-12-14 08:40:46,311 ERROR - [main                 ] org.springframework.boot.SpringApplication         : Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:181)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1023)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:195)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:159)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanType(BeanTypeRegistry.java:152)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:140)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:135)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.getNamesForType(BeanTypeRegistry.java:97)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:298)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:289)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:278)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:189)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:160)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 43 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 69 common frames omitted
+2018-12-14 08:40:46,311  WARN - [main                 ] org.springframework.boot.SpringApplication         : Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:507)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:477)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:590)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:905)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:891)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:877)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:826)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 52 common frames omitted
+2018-12-14 08:40:46,311 ERROR - [main                 ] o.springframework.test.context.TestContextManager  : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@40cb8df7] to prepare test instance [com.example.tracea.TraceaApplicationTests@7ff2b8d2]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:181)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1023)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:195)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:159)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanType(BeanTypeRegistry.java:152)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:140)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:135)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.getNamesForType(BeanTypeRegistry.java:97)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:298)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:289)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:278)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:189)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:160)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 43 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 69 common frames omitted
+2018-12-14 08:43:23,810  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$52c29b51] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 08:43:24,201  INFO - [main                 ] com.example.tracea.TraceaApplicationTests          : No active profile set, falling back to default profiles: default
+2018-12-14 08:43:24,483 ERROR - [main                 ] org.springframework.boot.SpringApplication         : Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:181)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1023)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:195)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:159)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanType(BeanTypeRegistry.java:152)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:140)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:135)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.getNamesForType(BeanTypeRegistry.java:97)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:298)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:289)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:278)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:189)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:160)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 43 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 69 common frames omitted
+2018-12-14 08:43:24,483  WARN - [main                 ] org.springframework.boot.SpringApplication         : Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:507)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:477)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:590)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:905)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:891)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:877)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:826)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 52 common frames omitted
+2018-12-14 08:43:24,483 ERROR - [main                 ] o.springframework.test.context.TestContextManager  : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@40cb8df7] to prepare test instance [com.example.tracea.TraceaApplicationTests@5e76a2bb]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:181)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1023)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:195)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:159)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanType(BeanTypeRegistry.java:152)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:140)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:135)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.getNamesForType(BeanTypeRegistry.java:97)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:298)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:289)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:278)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:189)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:160)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 43 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 69 common frames omitted
+2018-12-14 08:43:53,708  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c06e47c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 08:43:54,051  INFO - [main                 ] com.example.tracea.TraceaApplication               : No active profile set, falling back to default profiles: default
+2018-12-14 08:43:54,284 ERROR - [main                 ] org.springframework.boot.SpringApplication         : Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:181)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.tracea.TraceaApplication.main(TraceaApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1023)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:195)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:159)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanType(BeanTypeRegistry.java:152)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:140)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:135)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.getNamesForType(BeanTypeRegistry.java:97)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:298)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:289)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:278)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:189)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:160)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 43 common frames omitted
+2018-12-14 08:43:54,300  WARN - [main                 ] org.springframework.boot.SpringApplication         : Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:507)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:477)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:590)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:905)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:891)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:877)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:826)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.tracea.TraceaApplication.main(TraceaApplication.java:10)
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+2018-12-14 09:02:11,731  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$be97ca6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:02:12,106  INFO - [main                 ] com.example.tracea.TraceaApplication               : No active profile set, falling back to default profiles: default
+2018-12-14 09:02:12,622  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=2a3678de-8041-384c-8857-176984e34a97
+2018-12-14 09:02:12,778  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$be97ca6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:02:13,106  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 2222 (http)
+2018-12-14 09:02:13,106  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-2222"]
+2018-12-14 09:02:13,121  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2018-12-14 09:02:13,121  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-14 09:02:13,121  INFO - [main                 ] org.apache.catalina.core.AprLifecycleListener      : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-11.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\apache_maven_3.3.9\bin;D:\database\redis\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\database\mongodb\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\Program Files\erl10.0.1\bin;D:\database\mysql-5.7.23-winx64\bin;D:\nodejs\;D:\scala-2.11.8\bin;"%JAVA_HOME%\bin;";C:\Users\49535\AppData\Local\Microsoft\WindowsApps;C:\Users\49535\AppData\Roaming\npm;.]
+2018-12-14 09:02:13,293  INFO - [main                 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2018-12-14 09:02:13,293  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1187 ms
+2018-12-14 09:02:13,824  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:02:13,824  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:02:13,824  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:02:13,824  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:02:14,059  INFO - [main                 ] o.s.scheduling.concurrent.ThreadPoolTaskExecutor   : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-14 09:02:14,887  INFO - [main                 ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-12-14 09:02:14,934  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Initializing Eureka in region us-east-1
+2018-12-14 09:02:15,043  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON encoding codec LegacyJacksonJson
+2018-12-14 09:02:15,043  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON decoding codec LegacyJacksonJson
+2018-12-14 09:02:15,137  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML encoding codec XStreamXml
+2018-12-14 09:02:15,137  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML decoding codec XStreamXml
+2018-12-14 09:02:15,262  INFO - [main                 ] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:02:15,433  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-14 09:02:15,433  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-14 09:02:15,433  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-14 09:02:15,433  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-14 09:02:15,433  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-14 09:02:15,433  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application version is -1: true
+2018-12-14 09:02:15,433  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-14 09:02:15,543  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-14 09:02:15,543  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Starting heartbeat executor: renew interval is: 30
+2018-12-14 09:02:15,543  INFO - [main                 ] com.netflix.discovery.InstanceInfoReplicator       : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-14 09:02:15,543  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Discovery Client initialized at timestamp 1544749335543 with initial instances count: 0
+2018-12-14 09:02:15,996  INFO - [main                 ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Registering application TRACE-A with eureka with status UP
+2018-12-14 09:02:15,996  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Saw local status change event StatusChangeEvent [timestamp=1544749335996, current=UP, previous=STARTING]
+2018-12-14 09:02:15,996  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222: registering service...
+2018-12-14 09:02:16,011  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-2222"]
+2018-12-14 09:02:16,027  INFO - [main                 ] org.apache.tomcat.util.net.NioSelectorPool         : Using a shared selector for servlet write/read
+2018-12-14 09:02:16,043  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 2222 (http) with context path ''
+2018-12-14 09:02:16,043  INFO - [main                 ] o.s.c.n.e.s.EurekaAutoServiceRegistration          : Updating port to 2222
+2018-12-14 09:02:16,043  INFO - [main                 ] com.example.tracea.TraceaApplication               : Started TraceaApplication in 5.296 seconds (JVM running for 6.289)
+2018-12-14 09:02:16,058  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222 - registration status: 204
+2018-12-14 09:02:45,553  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-14 09:02:45,553  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-14 09:02:45,553  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-14 09:02:45,553  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-14 09:02:45,553  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-14 09:02:45,553  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Application version is -1: false
+2018-12-14 09:02:45,553  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-14 09:02:45,633  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-14 09:07:15,453  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:12:15,470  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:17:15,483  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:21:11,609  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53488161] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:21:11,952  INFO - [main                 ] com.example.tracea.TraceaApplication               : No active profile set, falling back to default profiles: default
+2018-12-14 09:21:12,437  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=3e976ec5-0440-375e-9d5e-0c2b0bf542d9
+2018-12-14 09:21:12,593  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53488161] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:21:12,921  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 2222 (http)
+2018-12-14 09:21:12,921  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-2222"]
+2018-12-14 09:21:12,921  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2018-12-14 09:21:12,921  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-14 09:21:12,937  INFO - [main                 ] org.apache.catalina.core.AprLifecycleListener      : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-11.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\apache_maven_3.3.9\bin;D:\database\redis\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\database\mongodb\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\Program Files\erl10.0.1\bin;D:\database\mysql-5.7.23-winx64\bin;D:\nodejs\;D:\scala-2.11.8\bin;"%JAVA_HOME%\bin;";C:\Users\49535\AppData\Local\Microsoft\WindowsApps;C:\Users\49535\AppData\Roaming\npm;.]
+2018-12-14 09:21:13,077  INFO - [main                 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2018-12-14 09:21:13,077  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1125 ms
+2018-12-14 09:21:13,608  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:21:13,608  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:21:13,608  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:21:13,608  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:21:13,874  INFO - [main                 ] o.s.scheduling.concurrent.ThreadPoolTaskExecutor   : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-14 09:21:14,702  INFO - [main                 ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-12-14 09:21:14,733  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Initializing Eureka in region us-east-1
+2018-12-14 09:21:14,842  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON encoding codec LegacyJacksonJson
+2018-12-14 09:21:14,842  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON decoding codec LegacyJacksonJson
+2018-12-14 09:21:14,905  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML encoding codec XStreamXml
+2018-12-14 09:21:14,905  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML decoding codec XStreamXml
+2018-12-14 09:21:15,030  INFO - [main                 ] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:21:15,217  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-14 09:21:15,217  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-14 09:21:15,217  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-14 09:21:15,217  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-14 09:21:15,217  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-14 09:21:15,217  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application version is -1: true
+2018-12-14 09:21:15,217  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-14 09:21:15,327  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-14 09:21:15,327  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Starting heartbeat executor: renew interval is: 30
+2018-12-14 09:21:15,327  INFO - [main                 ] com.netflix.discovery.InstanceInfoReplicator       : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-14 09:21:15,342  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Discovery Client initialized at timestamp 1544750475327 with initial instances count: 1
+2018-12-14 09:21:15,795  INFO - [main                 ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Registering application TRACE-A with eureka with status UP
+2018-12-14 09:21:15,795  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Saw local status change event StatusChangeEvent [timestamp=1544750475795, current=UP, previous=STARTING]
+2018-12-14 09:21:15,795  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222: registering service...
+2018-12-14 09:21:15,811  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-2222"]
+2018-12-14 09:21:15,827  INFO - [main                 ] org.apache.tomcat.util.net.NioSelectorPool         : Using a shared selector for servlet write/read
+2018-12-14 09:21:15,827  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222 - registration status: 204
+2018-12-14 09:21:15,842  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 2222 (http) with context path ''
+2018-12-14 09:21:15,842  INFO - [main                 ] o.s.c.n.e.s.EurekaAutoServiceRegistration          : Updating port to 2222
+2018-12-14 09:21:15,842  INFO - [main                 ] com.example.tracea.TraceaApplication               : Started TraceaApplication in 5.077 seconds (JVM running for 6.014)
+2018-12-14 09:24:38,969  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4ded9eae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:24:39,313  INFO - [main                 ] com.example.tracea.TraceaApplication               : No active profile set, falling back to default profiles: default
+2018-12-14 09:24:39,813  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=3e976ec5-0440-375e-9d5e-0c2b0bf542d9
+2018-12-14 09:24:39,969  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4ded9eae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:24:40,266  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 2222 (http)
+2018-12-14 09:24:40,281  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-2222"]
+2018-12-14 09:24:40,281  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2018-12-14 09:24:40,281  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-14 09:24:40,297  INFO - [main                 ] org.apache.catalina.core.AprLifecycleListener      : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-11.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\apache_maven_3.3.9\bin;D:\database\redis\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\database\mongodb\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\Program Files\erl10.0.1\bin;D:\database\mysql-5.7.23-winx64\bin;D:\nodejs\;D:\scala-2.11.8\bin;"%JAVA_HOME%\bin;";C:\Users\49535\AppData\Local\Microsoft\WindowsApps;C:\Users\49535\AppData\Roaming\npm;.]
+2018-12-14 09:24:40,440  INFO - [main                 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2018-12-14 09:24:40,440  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1112 ms
+2018-12-14 09:24:41,002  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:24:41,002  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:24:41,002  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:24:41,002  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:24:41,283  INFO - [main                 ] o.s.scheduling.concurrent.ThreadPoolTaskExecutor   : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-14 09:24:42,189  INFO - [main                 ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-12-14 09:24:42,205  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Initializing Eureka in region us-east-1
+2018-12-14 09:24:42,314  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON encoding codec LegacyJacksonJson
+2018-12-14 09:24:42,314  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON decoding codec LegacyJacksonJson
+2018-12-14 09:24:42,392  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML encoding codec XStreamXml
+2018-12-14 09:24:42,392  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML decoding codec XStreamXml
+2018-12-14 09:24:42,533  INFO - [main                 ] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:24:42,705  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-14 09:24:42,705  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-14 09:24:42,705  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-14 09:24:42,705  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-14 09:24:42,705  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-14 09:24:42,705  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application version is -1: true
+2018-12-14 09:24:42,705  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-14 09:24:42,814  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-14 09:24:42,830  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Starting heartbeat executor: renew interval is: 30
+2018-12-14 09:24:42,830  INFO - [main                 ] com.netflix.discovery.InstanceInfoReplicator       : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-14 09:24:42,830  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Discovery Client initialized at timestamp 1544750682830 with initial instances count: 1
+2018-12-14 09:24:43,267  INFO - [main                 ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Registering application TRACE-A with eureka with status UP
+2018-12-14 09:24:43,267  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Saw local status change event StatusChangeEvent [timestamp=1544750683267, current=UP, previous=STARTING]
+2018-12-14 09:24:43,267  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222: registering service...
+2018-12-14 09:24:43,283  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-2222"]
+2018-12-14 09:24:43,298  INFO - [main                 ] org.apache.tomcat.util.net.NioSelectorPool         : Using a shared selector for servlet write/read
+2018-12-14 09:24:43,314  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 2222 (http) with context path ''
+2018-12-14 09:24:43,314  INFO - [main                 ] o.s.c.n.e.s.EurekaAutoServiceRegistration          : Updating port to 2222
+2018-12-14 09:24:43,314  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222 - registration status: 204
+2018-12-14 09:24:43,314  INFO - [main                 ] com.example.tracea.TraceaApplication               : Started TraceaApplication in 5.204 seconds (JVM running for 6.092)
+2018-12-14 09:25:46,502  INFO - [http-nio-2222-exec-1 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-14 09:25:46,502  INFO - [http-nio-2222-exec-1 ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2018-12-14 09:25:46,516  INFO - [http-nio-2222-exec-1 ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 14 ms
+2018-12-14 09:25:46,542  INFO - [http-nio-2222-exec-1 ] c.e.t.TraceaApplication$$EnhancerBySpringCGLIB$$30653769 : trace-1 is running successfully! 
+2018-12-14 09:25:47,441  INFO - [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@44bd4b0a}] com.netflix.config.ChainedDynamicProperty          : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-12-14 09:25:47,472  INFO - [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@44bd4b0a}] com.netflix.util.concurrent.ShutdownEnabledTimer   : Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2018-12-14 09:25:47,472  INFO - [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@44bd4b0a}] com.netflix.loadbalancer.BaseLoadBalancer          : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-12-14 09:25:47,478  INFO - [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@44bd4b0a}] c.n.loadbalancer.DynamicServerListLoadBalancer     : Using serverListUpdater PollingServerListUpdater
+2018-12-14 09:25:47,481  INFO - [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@44bd4b0a}] c.n.loadbalancer.DynamicServerListLoadBalancer     : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@29b83c03
+2018-12-14 09:27:06,425  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ccf6477] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:27:06,800  INFO - [main                 ] com.example.tracea.TraceaApplicationTests          : No active profile set, falling back to default profiles: default
+2018-12-14 09:27:07,549  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=2540cad8-e687-3df6-8080-786dab1ae08c
+2018-12-14 09:27:07,940  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ccf6477] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:27:08,440  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:27:08,440  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:27:08,455  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:27:08,455  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:27:09,065  INFO - [main                 ] o.s.scheduling.concurrent.ThreadPoolTaskExecutor   : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-14 09:27:10,908  INFO - [main                 ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-12-14 09:27:10,970  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Initializing Eureka in region us-east-1
+2018-12-14 09:27:11,345  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON encoding codec LegacyJacksonJson
+2018-12-14 09:27:11,345  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON decoding codec LegacyJacksonJson
+2018-12-14 09:27:11,470  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML encoding codec XStreamXml
+2018-12-14 09:27:11,470  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML decoding codec XStreamXml
+2018-12-14 09:27:11,642  INFO - [main                 ] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:27:11,815  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-14 09:27:11,815  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-14 09:27:11,815  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-14 09:27:11,815  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-14 09:27:11,815  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-14 09:27:11,815  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application version is -1: true
+2018-12-14 09:27:11,815  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-14 09:27:12,003  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-14 09:27:12,003  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Starting heartbeat executor: renew interval is: 30
+2018-12-14 09:27:12,003  INFO - [main                 ] com.netflix.discovery.InstanceInfoReplicator       : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-14 09:27:12,003  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Discovery Client initialized at timestamp 1544750832003 with initial instances count: 1
+2018-12-14 09:27:12,706  INFO - [main                 ] com.example.tracea.TraceaApplicationTests          : Started TraceaApplicationTests in 7.172 seconds (JVM running for 8.182)
+2018-12-14 09:27:12,956  INFO - [Thread-5             ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Unregistering application TRACE-A with eureka with status DOWN
+2018-12-14 09:27:12,971  WARN - [Thread-5             ] com.netflix.discovery.DiscoveryClient              : Saw local status change event StatusChangeEvent [timestamp=1544750832971, current=DOWN, previous=STARTING]
+2018-12-14 09:27:12,971  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:-1: registering service...
+2018-12-14 09:27:13,003  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:-1 - registration status: 204
+2018-12-14 09:27:13,987  INFO - [Thread-5             ] o.s.scheduling.concurrent.ThreadPoolTaskExecutor   : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-14 09:27:14,002  INFO - [Thread-5             ] com.netflix.discovery.DiscoveryClient              : Shutting down DiscoveryClient ...
+2018-12-14 09:27:14,002  WARN - [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@180b3819}] o.s.c.a.AnnotationConfigApplicationContext         : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-12-14 09:27:17,019  INFO - [Thread-5             ] com.netflix.discovery.DiscoveryClient              : Unregistering ...
+2018-12-14 09:27:17,034  INFO - [Thread-5             ] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:-1 - deregister  status: 200
+2018-12-14 09:27:17,065  INFO - [Thread-5             ] com.netflix.discovery.DiscoveryClient              : Completed shut down of DiscoveryClient
+2018-12-14 09:29:42,730  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:34:42,737  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:38:08,145  INFO - [http-nio-2222-exec-5 ] c.e.t.TraceaApplication$$EnhancerBySpringCGLIB$$30653769 : trace-2 is calling successfully! 
+2018-12-14 09:38:08,208  INFO - [http-nio-2222-exec-5 ] com.netflix.config.ChainedDynamicProperty          : Flipping property: trace-b.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-12-14 09:38:08,209  INFO - [http-nio-2222-exec-5 ] com.netflix.util.concurrent.ShutdownEnabledTimer   : Shutdown hook installed for: NFLoadBalancer-PingTimer-trace-b
+2018-12-14 09:38:08,209  INFO - [http-nio-2222-exec-5 ] com.netflix.loadbalancer.BaseLoadBalancer          : Client: trace-b instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=trace-b,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-12-14 09:38:08,210  INFO - [http-nio-2222-exec-5 ] c.n.loadbalancer.DynamicServerListLoadBalancer     : Using serverListUpdater PollingServerListUpdater
+2018-12-14 09:38:08,211  INFO - [http-nio-2222-exec-5 ] c.n.loadbalancer.DynamicServerListLoadBalancer     : DynamicServerListLoadBalancer for client trace-b initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=trace-b,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@4012bbd0
+2018-12-14 09:38:08,223 ERROR - [http-nio-2222-exec-5 ] o.s.c.sleuth.instrument.web.ExceptionLoggingFilter : Uncaught exception thrown
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalStateException: No instances available for trace-b
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: No instances available for trace-b
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.execute(RibbonLoadBalancerClient.java:105)
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.execute(RibbonLoadBalancerClient.java:93)
+	at org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor.intercept(LoadBalancerInterceptor.java:55)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:92)
+	at brave.spring.web.TracingClientHttpRequestInterceptor.intercept(TracingClientHttpRequestInterceptor.java:53)
+	at org.springframework.cloud.sleuth.instrument.web.client.LazyTracingClientHttpRequestInterceptor.intercept(TraceWebClientAutoConfiguration.java:305)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:92)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:734)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:337)
+	at com.example.tracea.TraceaApplication.traceRPC(TraceaApplication.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	... 47 common frames omitted
+2018-12-14 09:38:08,226 ERROR - [http-nio-2222-exec-5 ] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: No instances available for trace-b] with root cause
+java.lang.IllegalStateException: No instances available for trace-b
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.execute(RibbonLoadBalancerClient.java:105)
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.execute(RibbonLoadBalancerClient.java:93)
+	at org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor.intercept(LoadBalancerInterceptor.java:55)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:92)
+	at brave.spring.web.TracingClientHttpRequestInterceptor.intercept(TracingClientHttpRequestInterceptor.java:53)
+	at org.springframework.cloud.sleuth.instrument.web.client.LazyTracingClientHttpRequestInterceptor.intercept(TraceWebClientAutoConfiguration.java:305)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:92)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:734)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:337)
+	at com.example.tracea.TraceaApplication.traceRPC(TraceaApplication.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-12-14 09:38:39,269  INFO - [PollingServerListUpdater-0] com.netflix.config.ChainedDynamicProperty          : Flipping property: trace-b.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-12-14 09:39:42,749  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:43:12,033  INFO - [http-nio-2222-exec-9 ] c.e.t.TraceaApplication$$EnhancerBySpringCGLIB$$30653769 : trace-2 is calling successfully! 
+2018-12-14 09:43:18,654  INFO - [http-nio-2222-exec-10] c.e.t.TraceaApplication$$EnhancerBySpringCGLIB$$30653769 : trace-2 is calling successfully! 
+2018-12-14 09:43:26,509  INFO - [http-nio-2222-exec-3 ] c.e.t.TraceaApplication$$EnhancerBySpringCGLIB$$30653769 : trace-2 is calling successfully! 
+2018-12-14 09:44:42,754  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:49:42,768  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:55:55,138  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:00:55,144  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:05:55,158  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:07:05,908  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4297b092] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:07:06,314  INFO - [main                 ] com.example.tracea.TraceaApplication               : No active profile set, falling back to default profiles: default
+2018-12-14 10:07:07,095  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=3e976ec5-0440-375e-9d5e-0c2b0bf542d9
+2018-12-14 10:07:07,267  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4297b092] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:07:07,610  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 2222 (http)
+2018-12-14 10:07:07,626  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-2222"]
+2018-12-14 10:07:07,626  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2018-12-14 10:07:07,626  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-14 10:07:07,642  INFO - [main                 ] org.apache.catalina.core.AprLifecycleListener      : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-11.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\apache_maven_3.3.9\bin;D:\database\redis\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\database\mongodb\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\Program Files\erl10.0.1\bin;D:\database\mysql-5.7.23-winx64\bin;D:\nodejs\;D:\scala-2.11.8\bin;"%JAVA_HOME%\bin;";C:\Users\49535\AppData\Local\Microsoft\WindowsApps;C:\Users\49535\AppData\Roaming\npm;.]
+2018-12-14 10:07:07,782  INFO - [main                 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2018-12-14 10:07:07,782  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1453 ms
+2018-12-14 10:07:08,345  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 10:07:08,345  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 10:07:08,345  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 10:07:08,345  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 10:07:08,626  INFO - [main                 ] o.s.scheduling.concurrent.ThreadPoolTaskExecutor   : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-14 10:07:09,563  INFO - [main                 ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-12-14 10:07:09,594  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Initializing Eureka in region us-east-1
+2018-12-14 10:07:09,721  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON encoding codec LegacyJacksonJson
+2018-12-14 10:07:09,721  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON decoding codec LegacyJacksonJson
+2018-12-14 10:07:09,799  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML encoding codec XStreamXml
+2018-12-14 10:07:09,799  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML decoding codec XStreamXml
+2018-12-14 10:07:09,955  INFO - [main                 ] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:07:10,142  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-14 10:07:10,142  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-14 10:07:10,142  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-14 10:07:10,142  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-14 10:07:10,142  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-14 10:07:10,142  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application version is -1: true
+2018-12-14 10:07:10,142  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-14 10:07:10,267  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-14 10:07:10,267  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Starting heartbeat executor: renew interval is: 30
+2018-12-14 10:07:10,267  INFO - [main                 ] com.netflix.discovery.InstanceInfoReplicator       : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-14 10:07:10,283  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Discovery Client initialized at timestamp 1544753230283 with initial instances count: 2
+2018-12-14 10:07:10,752  INFO - [main                 ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Registering application TRACE-A with eureka with status UP
+2018-12-14 10:07:10,752  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Saw local status change event StatusChangeEvent [timestamp=1544753230752, current=UP, previous=STARTING]
+2018-12-14 10:07:10,767  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222: registering service...
+2018-12-14 10:07:10,783  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-2222"]
+2018-12-14 10:07:10,783  INFO - [main                 ] org.apache.tomcat.util.net.NioSelectorPool         : Using a shared selector for servlet write/read
+2018-12-14 10:07:10,798  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222 - registration status: 204
+2018-12-14 10:07:10,798  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 2222 (http) with context path ''
+2018-12-14 10:07:10,798  INFO - [main                 ] o.s.c.n.e.s.EurekaAutoServiceRegistration          : Updating port to 2222
+2018-12-14 10:07:10,798  INFO - [main                 ] com.example.tracea.TraceaApplication               : Started TraceaApplication in 5.999 seconds (JVM running for 7.427)
+2018-12-14 10:10:33,567  INFO - [http-nio-2222-exec-1 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-14 10:10:33,568  INFO - [http-nio-2222-exec-1 ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2018-12-14 10:10:33,579  INFO - [http-nio-2222-exec-1 ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 11 ms
+2018-12-14 10:10:33,597  INFO - [http-nio-2222-exec-1 ] c.e.t.TraceaApplication$$EnhancerBySpringCGLIB$$250f494d : trace-1 is running successfully! 
+2018-12-14 10:12:10,158  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:17:10,171  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:22:10,175  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:27:10,185  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:32:10,192  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:37:10,199  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:42:10,214  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:42:43,016  INFO - [http-nio-2222-exec-3 ] c.e.t.TraceaApplication$$EnhancerBySpringCGLIB$$250f494d : trace-1 is running successfully! 
+2018-12-14 10:47:10,219  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:52:10,231  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:57:10,239  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:58:38,630  INFO - [http-nio-2222-exec-5 ] c.e.t.TraceaApplication$$EnhancerBySpringCGLIB$$250f494d : trace-1 is running successfully! 

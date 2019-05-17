@@ -1,0 +1,111 @@
+2018-12-14 09:37:52,956  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$44ffb7b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:37:53,425  INFO - [main                 ] com.example.traceb.TracebApplication               : No active profile set, falling back to default profiles: default
+2018-12-14 09:37:53,940  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=460e05fd-9c44-3382-a231-127a6bcc6cae
+2018-12-14 09:37:54,127  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$44ffb7b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:37:54,448  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 3333 (http)
+2018-12-14 09:37:54,448  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-3333"]
+2018-12-14 09:37:54,463  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2018-12-14 09:37:54,463  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-14 09:37:54,463  INFO - [main                 ] org.apache.catalina.core.AprLifecycleListener      : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-11.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\apache_maven_3.3.9\bin;D:\database\redis\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\database\mongodb\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\Program Files\erl10.0.1\bin;D:\database\mysql-5.7.23-winx64\bin;D:\nodejs\;D:\scala-2.11.8\bin;"%JAVA_HOME%\bin;";C:\Users\49535\AppData\Local\Microsoft\WindowsApps;C:\Users\49535\AppData\Roaming\npm;.]
+2018-12-14 09:37:54,620  INFO - [main                 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2018-12-14 09:37:54,620  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1180 ms
+2018-12-14 09:37:55,166  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:37:55,166  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:37:55,166  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 09:37:55,166  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 09:37:55,401  INFO - [main                 ] o.s.scheduling.concurrent.ThreadPoolTaskExecutor   : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-14 09:37:56,682  INFO - [main                 ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-12-14 09:37:56,713  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Initializing Eureka in region us-east-1
+2018-12-14 09:37:56,822  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON encoding codec LegacyJacksonJson
+2018-12-14 09:37:56,822  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON decoding codec LegacyJacksonJson
+2018-12-14 09:37:56,916  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML encoding codec XStreamXml
+2018-12-14 09:37:56,916  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML decoding codec XStreamXml
+2018-12-14 09:37:57,025  INFO - [main                 ] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:37:57,222  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-14 09:37:57,222  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-14 09:37:57,222  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-14 09:37:57,222  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-14 09:37:57,222  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-14 09:37:57,222  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application version is -1: true
+2018-12-14 09:37:57,222  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-14 09:37:57,347  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-14 09:37:57,347  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Starting heartbeat executor: renew interval is: 30
+2018-12-14 09:37:57,347  INFO - [main                 ] com.netflix.discovery.InstanceInfoReplicator       : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-14 09:37:57,363  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Discovery Client initialized at timestamp 1544751477363 with initial instances count: 1
+2018-12-14 09:37:57,363  INFO - [main                 ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Registering application TRACE-B with eureka with status UP
+2018-12-14 09:37:57,363  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Saw local status change event StatusChangeEvent [timestamp=1544751477363, current=UP, previous=STARTING]
+2018-12-14 09:37:57,363  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-B/LAPTOP-AJOD9Q7O:trace-b:3333: registering service...
+2018-12-14 09:37:57,378  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-3333"]
+2018-12-14 09:37:57,394  INFO - [main                 ] org.apache.tomcat.util.net.NioSelectorPool         : Using a shared selector for servlet write/read
+2018-12-14 09:37:57,425  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 3333 (http) with context path ''
+2018-12-14 09:37:57,425  INFO - [main                 ] o.s.c.n.e.s.EurekaAutoServiceRegistration          : Updating port to 3333
+2018-12-14 09:37:57,425  INFO - [main                 ] com.example.traceb.TracebApplication               : Started TracebApplication in 5.328 seconds (JVM running for 6.893)
+2018-12-14 09:37:57,425  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-B/LAPTOP-AJOD9Q7O:trace-b:3333 - registration status: 204
+2018-12-14 09:42:57,237  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:43:12,085  INFO - [http-nio-3333-exec-1 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-14 09:43:12,085  INFO - [http-nio-3333-exec-1 ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2018-12-14 09:43:12,097  INFO - [http-nio-3333-exec-1 ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 12 ms
+2018-12-14 09:43:12,116  INFO - [http-nio-3333-exec-1 ] c.e.t.TracebApplication$$EnhancerBySpringCGLIB$$fb1d9b92 : trace-2 is running successfully! 
+2018-12-14 09:43:18,659  INFO - [http-nio-3333-exec-4 ] c.e.t.TracebApplication$$EnhancerBySpringCGLIB$$fb1d9b92 : trace-2 is running successfully! 
+2018-12-14 09:43:26,514  INFO - [http-nio-3333-exec-5 ] c.e.t.TracebApplication$$EnhancerBySpringCGLIB$$fb1d9b92 : trace-2 is running successfully! 
+2018-12-14 09:47:57,249  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:54:09,615  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 09:59:09,630  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:04:09,644  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:07:56,686  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$be57aac5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:07:57,030  INFO - [main                 ] com.example.traceb.TracebApplication               : No active profile set, falling back to default profiles: default
+2018-12-14 10:07:57,530  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=460e05fd-9c44-3382-a231-127a6bcc6cae
+2018-12-14 10:07:57,686  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$be57aac5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:07:57,998  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 3333 (http)
+2018-12-14 10:07:58,014  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-3333"]
+2018-12-14 10:07:58,014  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2018-12-14 10:07:58,014  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-14 10:07:58,030  INFO - [main                 ] org.apache.catalina.core.AprLifecycleListener      : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-11.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\apache_maven_3.3.9\bin;D:\database\redis\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\database\mongodb\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\Program Files\erl10.0.1\bin;D:\database\mysql-5.7.23-winx64\bin;D:\nodejs\;D:\scala-2.11.8\bin;"%JAVA_HOME%\bin;";C:\Users\49535\AppData\Local\Microsoft\WindowsApps;C:\Users\49535\AppData\Roaming\npm;.]
+2018-12-14 10:07:58,170  INFO - [main                 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2018-12-14 10:07:58,170  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1124 ms
+2018-12-14 10:07:58,717  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 10:07:58,717  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 10:07:58,717  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-14 10:07:58,717  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-14 10:07:58,936  INFO - [main                 ] o.s.scheduling.concurrent.ThreadPoolTaskExecutor   : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-14 10:08:00,221  INFO - [main                 ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-12-14 10:08:00,252  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Initializing Eureka in region us-east-1
+2018-12-14 10:08:00,362  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON encoding codec LegacyJacksonJson
+2018-12-14 10:08:00,362  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON decoding codec LegacyJacksonJson
+2018-12-14 10:08:00,424  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML encoding codec XStreamXml
+2018-12-14 10:08:00,424  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML decoding codec XStreamXml
+2018-12-14 10:08:00,565  INFO - [main                 ] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:08:00,737  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-14 10:08:00,737  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-14 10:08:00,737  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-14 10:08:00,737  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-14 10:08:00,737  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-14 10:08:00,737  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application version is -1: true
+2018-12-14 10:08:00,737  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-14 10:08:00,846  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-14 10:08:00,846  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Starting heartbeat executor: renew interval is: 30
+2018-12-14 10:08:00,846  INFO - [main                 ] com.netflix.discovery.InstanceInfoReplicator       : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-14 10:08:00,846  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Discovery Client initialized at timestamp 1544753280846 with initial instances count: 2
+2018-12-14 10:08:00,862  INFO - [main                 ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Registering application TRACE-B with eureka with status UP
+2018-12-14 10:08:00,862  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Saw local status change event StatusChangeEvent [timestamp=1544753280862, current=UP, previous=STARTING]
+2018-12-14 10:08:00,862  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-B/LAPTOP-AJOD9Q7O:trace-b:3333: registering service...
+2018-12-14 10:08:00,877  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-3333"]
+2018-12-14 10:08:00,893  INFO - [main                 ] org.apache.tomcat.util.net.NioSelectorPool         : Using a shared selector for servlet write/read
+2018-12-14 10:08:00,908  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-B/LAPTOP-AJOD9Q7O:trace-b:3333 - registration status: 204
+2018-12-14 10:08:00,908  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 3333 (http) with context path ''
+2018-12-14 10:08:00,908  INFO - [main                 ] o.s.c.n.e.s.EurekaAutoServiceRegistration          : Updating port to 3333
+2018-12-14 10:08:00,908  INFO - [main                 ] com.example.traceb.TracebApplication               : Started TracebApplication in 5.301 seconds (JVM running for 6.387)
+2018-12-14 10:10:38,393  INFO - [http-nio-3333-exec-1 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-14 10:10:38,393  INFO - [http-nio-3333-exec-1 ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2018-12-14 10:10:38,405  INFO - [http-nio-3333-exec-1 ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 11 ms
+2018-12-14 10:10:38,423  INFO - [http-nio-3333-exec-1 ] c.e.t.TracebApplication$$EnhancerBySpringCGLIB$$74758ea0 : trace-2 is running successfully! 
+2018-12-14 10:13:00,752  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:18:00,766  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:23:00,778  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:28:00,795  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:33:00,808  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:38:00,823  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:43:00,838  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:48:00,854  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:53:00,870  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-14 10:58:00,875  INFO - [AsyncResolver-bootstrap-executor-0] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration

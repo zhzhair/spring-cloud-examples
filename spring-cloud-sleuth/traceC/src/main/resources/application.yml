@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: trace-c
+
+server:
+  port: 4444
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+

@@ -1,0 +1,12 @@
+分布式配置中心，这里仍然以Windows、jdk和idea为开发环境，按照下面的步骤打包-运行-访问就能看到效果：
+启动注册中心：java -jar F:\jars-config\register-0.0.1-SNAPSHOT.jar
+启动配置中心：config-server-0.0.1-SNAPSHOT.jar
+启动类启动notes项目，项目的配置放到了分布式配置仓库，下面介绍配置仓库：
+新建名称为config-repo的文件夹(即配置仓库)，里面放了文件夹和配置文件，用idea提交到github上，
+并新建另一个分支叫from-branch。启动notes客户端服务，访问下面的地址可以查看配置文件的信息：
+http://localhost:2222/exercise/dev/from-branch
+http://localhost:2222/exercise/test/from-branch
+访问notes服务的接口，修改配置文件，发现配置文件没有更新过来，但cmd执行如下POST请求配置文件就更新了：
+curl -X POST "http://localhost:9001/actuator/refresh"  --先curl -help查看你的电脑是否已安装curl
+分布式配置中心：https://github.com/zhzhair/config-repo.git
+源码地址：https://github.com/zhzhair/spring-cloud-config.git

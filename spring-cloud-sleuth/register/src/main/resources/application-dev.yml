@@ -1,0 +1,18 @@
+###此为单节点注册中心配置，其余几个为高可用注册中心
+spring:
+  application:
+    name: register
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: false
+
+server:
+  port: 1111

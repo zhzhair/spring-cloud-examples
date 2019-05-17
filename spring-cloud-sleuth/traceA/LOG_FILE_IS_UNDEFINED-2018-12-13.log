@@ -1,0 +1,146 @@
+2018-12-13 14:38:12,662  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ca781b2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 14:38:13,029  INFO - [main                 ] com.example.tracea.TraceaApplication               : No active profile set, falling back to default profiles: default
+2018-12-13 14:38:13,489  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=4cc3bd21-80d1-3369-aac5-04db13857e4d
+2018-12-13 14:38:13,629  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ca781b2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 14:38:13,942  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 2222 (http)
+2018-12-13 14:38:13,957  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-2222"]
+2018-12-13 14:38:13,957  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2018-12-13 14:38:13,957  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-13 14:38:13,973  INFO - [main                 ] org.apache.catalina.core.AprLifecycleListener      : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-11.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\apache_maven_3.3.9\bin;D:\database\redis\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\database\mongodb\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\Program Files\erl10.0.1\bin;D:\database\mysql-5.7.23-winx64\bin;D:\nodejs\;D:\scala-2.11.8\bin;"%JAVA_HOME%\bin;";C:\Users\49535\AppData\Local\Microsoft\WindowsApps;C:\Users\49535\AppData\Roaming\npm;.]
+2018-12-13 14:38:14,114  INFO - [main                 ] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2018-12-13 14:38:14,114  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1078 ms
+2018-12-13 14:38:14,614  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-13 14:38:14,614  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-13 14:38:14,614  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-12-13 14:38:14,614  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-13 14:38:14,817  INFO - [main                 ] o.s.scheduling.concurrent.ThreadPoolTaskExecutor   : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-13 14:38:15,676  INFO - [main                 ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-12-13 14:38:15,707  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Initializing Eureka in region us-east-1
+2018-12-13 14:38:15,816  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON encoding codec LegacyJacksonJson
+2018-12-13 14:38:15,816  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using JSON decoding codec LegacyJacksonJson
+2018-12-13 14:38:15,910  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML encoding codec XStreamXml
+2018-12-13 14:38:15,910  INFO - [main                 ] c.n.discovery.provider.DiscoveryJerseyProvider     : Using XML decoding codec XStreamXml
+2018-12-13 14:38:16,066  INFO - [main                 ] c.n.d.shared.resolver.aws.ConfigClusterResolver    : Resolving eureka endpoints via configuration
+2018-12-13 14:38:16,238  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-13 14:38:16,238  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-13 14:38:16,238  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-13 14:38:16,238  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-13 14:38:16,238  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-13 14:38:16,238  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Application version is -1: true
+2018-12-13 14:38:16,238  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-13 14:38:16,535  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-13 14:38:16,535  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Starting heartbeat executor: renew interval is: 30
+2018-12-13 14:38:16,551  INFO - [main                 ] com.netflix.discovery.InstanceInfoReplicator       : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-13 14:38:16,551  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Discovery Client initialized at timestamp 1544683096551 with initial instances count: 0
+2018-12-13 14:38:16,988  INFO - [main                 ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Registering application TRACE-A with eureka with status UP
+2018-12-13 14:38:16,988  INFO - [main                 ] com.netflix.discovery.DiscoveryClient              : Saw local status change event StatusChangeEvent [timestamp=1544683096988, current=UP, previous=STARTING]
+2018-12-13 14:38:16,988  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222: registering service...
+2018-12-13 14:38:17,004  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-2222"]
+2018-12-13 14:38:17,019  INFO - [main                 ] org.apache.tomcat.util.net.NioSelectorPool         : Using a shared selector for servlet write/read
+2018-12-13 14:38:17,035  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 2222 (http) with context path ''
+2018-12-13 14:38:17,035  INFO - [main                 ] o.s.c.n.e.s.EurekaAutoServiceRegistration          : Updating port to 2222
+2018-12-13 14:38:17,035  INFO - [main                 ] com.example.tracea.TraceaApplication               : Started TraceaApplication in 5.295 seconds (JVM running for 6.262)
+2018-12-13 14:38:17,144  INFO - [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient              : DiscoveryClient_TRACE-A/LAPTOP-AJOD9Q7O:trace-a:2222 - registration status: 204
+2018-12-13 14:38:46,558  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Disable delta property : false
+2018-12-13 14:38:46,558  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Single vip registry refresh property : null
+2018-12-13 14:38:46,558  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Force full registry fetch : false
+2018-12-13 14:38:46,558  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Application is null : false
+2018-12-13 14:38:46,558  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Registered Applications size is zero : true
+2018-12-13 14:38:46,558  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Application version is -1: false
+2018-12-13 14:38:46,558  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : Getting all instance registry info from the eureka server
+2018-12-13 14:38:46,605  INFO - [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient              : The response status is 200
+2018-12-13 17:04:26,647  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$859e9b21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 17:04:26,991  INFO - [main                 ] com.example.tracea.TraceaApplication               : No active profile set, falling back to default profiles: default
+2018-12-13 17:04:27,225 ERROR - [main                 ] org.springframework.boot.SpringApplication         : Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:181)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.tracea.TraceaApplication.main(TraceaApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1023)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:195)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanTypeForNonAliasDefinition(BeanTypeRegistry.java:159)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.addBeanType(BeanTypeRegistry.java:152)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:140)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.updateTypesIfNecessary(BeanTypeRegistry.java:135)
+	at org.springframework.boot.autoconfigure.condition.BeanTypeRegistry.getNamesForType(BeanTypeRegistry.java:97)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:298)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:289)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:278)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:189)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:160)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 43 common frames omitted
+2018-12-13 17:04:27,241  WARN - [main                 ] org.springframework.boot.SpringApplication         : Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:626)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:721)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:662)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:630)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:507)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:477)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:590)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:905)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:891)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:877)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:826)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.tracea.TraceaApplication.main(TraceaApplication.java:10)
+Caused by: java.lang.NoClassDefFoundError: com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted

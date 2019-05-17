@@ -1,0 +1,29 @@
+cmd启动注册中心--单节点：
+	java -jar F:\jars\register-0.0.1-SNAPSHOT.jar
+cmd启动注册中心--高可用多节点(3个节点为例)：
+	先配置hosts文件--将hosts文件拖到桌面添加如下内容，再拖回原来的位置，替换使hosts生效:
+	127.0.0.1 peer1
+	127.0.0.1 peer2
+	127.0.0.1 peer3
+	java -jar F:\jars\register-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1
+	java -jar F:\jars\register-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer2
+	java -jar F:\jars\register-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer3
+web监控访问地址：http://localhost:1111
+源码下载地址：https://github.com/zhzhair/register.git
+
+服务调用(基于单节点注册中心)--ribbon和feign两种调用方式：
+	java -jar F:\jars\outer-0.0.1-SNAPSHOT.jar
+	java -jar F:\jars\client-ribbon-0.0.1-SNAPSHOT.jar --server.port=8081
+	java -jar F:\jars\client-ribbon-0.0.1-SNAPSHOT.jar --server.port=8082
+	java -jar F:\jars\client-feign-0.0.1-SNAPSHOT.jar --server.port=8091
+	java -jar F:\jars\client-feign-0.0.1-SNAPSHOT.jar --server.port=8092
+访问路径：
+	http://localhost:8091/feign/consumer或http://localhost:8092/feign/consumer
+	http://localhost:8081/ribbon/consumer或http://localhost:8082/ribbon/consumer
+源码下载地址：https://github.com/zhzhair/spring-cloud-demo.git
+
+
+
+
+
+
