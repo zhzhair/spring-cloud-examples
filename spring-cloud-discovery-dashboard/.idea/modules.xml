@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-finchley-feign/client-feign.iml" filepath="$PROJECT_DIR$/spring-cloud-finchley-feign/client-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-finchley-ribbon/client-ribbon.iml" filepath="$PROJECT_DIR$/spring-cloud-finchley-ribbon/client-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrix-dashboard/dashboard.iml" filepath="$PROJECT_DIR$/hystrix-dashboard/dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/outer/outer.iml" filepath="$PROJECT_DIR$/outer/outer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-demo.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/turbine/turbine.iml" filepath="$PROJECT_DIR$/turbine/turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/turbine-amqp/turbine-amqp.iml" filepath="$PROJECT_DIR$/turbine-amqp/turbine-amqp.iml" />
+    </modules>
+  </component>
+</project>

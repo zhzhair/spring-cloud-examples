@@ -1,0 +1,116 @@
+2018-10-18 09:43:37,989  INFO - [main                 ] o.s.c.a.AnnotationConfigApplicationContext         : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ce8d869: startup date [Thu Oct 18 09:43:37 CST 2018]; root of context hierarchy
+2018-10-18 09:43:38,192  INFO - [main                 ] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor     : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-18 09:43:38,223  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dd4c190b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-18 09:43:38,583  INFO - [main                 ] com.example.feign.RewardsApplicationTests          : No active profile set, falling back to default profiles: default
+2018-10-18 09:43:38,583  INFO - [main                 ] o.s.w.context.support.GenericWebApplicationContext : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb: startup date [Thu Oct 18 09:43:38 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5ce8d869
+2018-10-18 09:43:39,270  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=fad7269c-0df8-3b01-8450-4caa22de6e91
+2018-10-18 09:43:39,317  INFO - [main                 ] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor     : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-18 09:43:39,395  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dd4c190b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-18 09:43:39,442  INFO - [main                 ] o.s.c.a.AnnotationConfigApplicationContext         : Refreshing FeignContext-RIBBONCLIENT: startup date [Thu Oct 18 09:43:39 CST 2018]; parent: org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb
+2018-10-18 09:43:39,473  INFO - [main                 ] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor     : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-18 09:43:39,911  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-10-18 09:43:39,911  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-18 09:43:39,911  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-10-18 09:43:39,911  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-18 09:43:40,098  INFO - [main                 ] o.s.web.servlet.handler.SimpleUrlHandlerMapping    : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-18 09:43:40,270  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerAdapter         : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb: startup date [Thu Oct 18 09:43:38 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5ce8d869
+2018-10-18 09:43:40,332  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/feign/server],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.feign.client.controller.FeignConsumerController.server()
+2018-10-18 09:43:40,332  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/feign/consumer],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.feign.client.controller.FeignConsumerController.consumer()
+2018-10-18 09:43:40,348  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/feign/thirdPart],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.feign.client.controller.FeignConsumerController.demo()
+2018-10-18 09:43:40,348  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-18 09:43:40,348  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-18 09:43:40,364  INFO - [main                 ] o.s.web.servlet.handler.SimpleUrlHandlerMapping    : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-18 09:43:40,364  INFO - [main                 ] o.s.web.servlet.handler.SimpleUrlHandlerMapping    : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-18 09:43:41,473  INFO - [main                 ] o.s.context.support.DefaultLifecycleProcessor      : Starting beans in phase 0
+2018-10-18 09:43:41,488  INFO - [main                 ] com.example.feign.RewardsApplicationTests          : Started RewardsApplicationTests in 4.277 seconds (JVM running for 5.363)
+2018-10-18 09:43:41,645  INFO - [Thread-5             ] o.s.w.context.support.GenericWebApplicationContext : Closing org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb: startup date [Thu Oct 18 09:43:38 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5ce8d869
+2018-10-18 09:43:41,660  INFO - [Thread-5             ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-10-18 09:43:41,660  INFO - [Thread-5             ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Unregistering application feignClient with eureka with status DOWN
+2018-10-18 09:43:41,660  INFO - [Thread-5             ] o.s.context.support.DefaultLifecycleProcessor      : Stopping beans in phase 0
+2018-10-18 09:43:41,660  INFO - [Thread-5             ] o.s.c.a.AnnotationConfigApplicationContext         : Closing FeignContext-RIBBONCLIENT: startup date [Thu Oct 18 09:43:39 CST 2018]; parent: org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb
+2018-10-18 09:43:41,660  WARN - [Thread-5             ] o.s.c.a.AnnotationConfigApplicationContext         : Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+2018-10-18 09:44:45,628  INFO - [main                 ] o.s.c.a.AnnotationConfigApplicationContext         : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ce8d869: startup date [Thu Oct 18 09:44:45 CST 2018]; root of context hierarchy
+2018-10-18 09:44:45,815  INFO - [main                 ] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor     : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-18 09:44:45,847  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dd4c190b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-18 09:44:46,221  INFO - [main                 ] com.example.feign.RewardsApplicationTests          : No active profile set, falling back to default profiles: default
+2018-10-18 09:44:46,221  INFO - [main                 ] o.s.w.context.support.GenericWebApplicationContext : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb: startup date [Thu Oct 18 09:44:46 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5ce8d869
+2018-10-18 09:44:46,815  INFO - [main                 ] o.springframework.cloud.context.scope.GenericScope : BeanFactory id=fad7269c-0df8-3b01-8450-4caa22de6e91
+2018-10-18 09:44:46,862  INFO - [main                 ] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor     : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-18 09:44:46,956  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dd4c190b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-18 09:44:46,987  INFO - [main                 ] o.s.c.a.AnnotationConfigApplicationContext         : Refreshing FeignContext-RIBBONCLIENT: startup date [Thu Oct 18 09:44:46 CST 2018]; parent: org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb
+2018-10-18 09:44:47,003  INFO - [main                 ] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor     : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-18 09:44:47,424  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-10-18 09:44:47,424  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-18 09:44:47,440  WARN - [main                 ] com.netflix.config.sources.URLConfigurationSource  : No URLs will be polled as dynamic configuration sources.
+2018-10-18 09:44:47,440  INFO - [main                 ] com.netflix.config.sources.URLConfigurationSource  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-18 09:44:47,581  INFO - [main                 ] o.s.web.servlet.handler.SimpleUrlHandlerMapping    : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-18 09:44:47,752  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerAdapter         : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb: startup date [Thu Oct 18 09:44:46 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5ce8d869
+2018-10-18 09:44:47,830  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/feign/server],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.feign.client.controller.FeignConsumerController.server()
+2018-10-18 09:44:47,830  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/feign/consumer],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.feign.client.controller.FeignConsumerController.consumer()
+2018-10-18 09:44:47,830  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/feign/thirdPart],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.feign.client.controller.FeignConsumerController.demo()
+2018-10-18 09:44:47,846  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-18 09:44:47,846  INFO - [main                 ] o.s.w.s.m.m.a.RequestMappingHandlerMapping         : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-18 09:44:47,877  INFO - [main                 ] o.s.web.servlet.handler.SimpleUrlHandlerMapping    : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-18 09:44:47,877  INFO - [main                 ] o.s.web.servlet.handler.SimpleUrlHandlerMapping    : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-18 09:44:49,018  INFO - [main                 ] o.s.context.support.DefaultLifecycleProcessor      : Starting beans in phase 0
+2018-10-18 09:44:49,050  INFO - [main                 ] com.example.feign.RewardsApplicationTests          : Started RewardsApplicationTests in 4.156 seconds (JVM running for 5.062)
+2018-10-18 09:44:49,221  INFO - [Thread-5             ] o.s.w.context.support.GenericWebApplicationContext : Closing org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb: startup date [Thu Oct 18 09:44:46 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5ce8d869
+2018-10-18 09:44:49,237  INFO - [Thread-5             ] o.s.cloud.netflix.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-10-18 09:44:49,237  INFO - [Thread-5             ] o.s.c.n.e.serviceregistry.EurekaServiceRegistry    : Unregistering application feignClient with eureka with status DOWN
+2018-10-18 09:44:49,237  INFO - [Thread-5             ] o.s.context.support.DefaultLifecycleProcessor      : Stopping beans in phase 0
+2018-10-18 09:44:49,237  INFO - [Thread-5             ] o.s.c.a.AnnotationConfigApplicationContext         : Closing FeignContext-RIBBONCLIENT: startup date [Thu Oct 18 09:44:46 CST 2018]; parent: org.springframework.web.context.support.GenericWebApplicationContext@423e4cbb
+2018-10-18 09:44:49,253  WARN - [Thread-5             ] o.s.c.a.AnnotationConfigApplicationContext         : Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)

@@ -1,0 +1,20 @@
+spring.application.name: feignClient # 服务名称，spring cloud微服务调用和分布式配置中心需要用到，调用时名称不区分大小写，非常重要
+
+eureka.client.service-url.defaultZone: http://localhost:1111/eureka/ #注册中心地址
+
+server:
+  port: 8090
+
+feign.hystrix.enabled: true #开启hystrix容错处理
+
+hystrix.command:
+  default:
+    execution:
+      isolation:
+        strategy: THREAD #进程隔离策略用线程池，不用信号量，这样可以实时查看仪表盘数据
+        thread:
+          timeoutInMilliseconds: 2000 # 配置接口调用超时时间--超过该时间就做熔断处理
+
+ribbon:
+  ReadTimeout: 3000 #ribbon调用处理超时时间
+  CollectTimeout: 2000 #ribbon调用连接超时时间
